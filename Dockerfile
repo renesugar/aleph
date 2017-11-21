@@ -1,8 +1,6 @@
-FROM debian:stretch
+FROM ubuntu:xenial
 ENV DEBIAN_FRONTEND noninteractive
 
-# Enable non-free archive for `unrar`.
-RUN echo "deb http://http.us.debian.org/debian stretch non-free" >/etc/apt/sources.list.d/nonfree.list
 RUN apt-get -qq -y update \
     && apt-get -qq -y upgrade \
     && apt-get -qq -y install wget git less \
@@ -11,7 +9,8 @@ RUN apt-get -qq -y update \
         libtiff5-dev libjpeg-dev zlib1g-dev libfreetype6-dev liblcms2-dev \
         poppler-utils poppler-data unrtf pstotext libwebp-dev python-pil \
         imagemagick-common imagemagick mdbtools p7zip-full libboost-python-dev libgsf-1-dev \
-        libtesseract-dev libjpeg-dev libicu-dev libldap2-dev libsasl2-dev djvulibre-bin \
+        libjpeg-dev libicu-dev libldap2-dev libsasl2-dev djvulibre-bin \
+        libtesseract-dev libleptonica-dev tesseract-ocr \
         tesseract-ocr-all \    
     && apt-get -qq -y autoremove \
     && apt-get clean \
