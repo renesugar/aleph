@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@blueprintjs/core": "^1.32.0",
+    "@blueprintjs/table": "^1.31.0",
     "axios": "^0.16.2",
     "bourbon": "^4.3.2",
     "classnames": "^2.2.5",

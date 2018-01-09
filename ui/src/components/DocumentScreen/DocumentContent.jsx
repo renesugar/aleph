@@ -5,6 +5,7 @@ import DualPane from 'src/components/common/DualPane';
 import TextViewer from './viewers/TextViewer';
 import HtmlViewer from './viewers/HtmlViewer';
 import PdfViewer from './viewers/PdfViewer';
+import ExcelViewer from './viewers/TabularViewer';
 import ImageViewer from './viewers/ImageViewer';
 import FolderViewer from './viewers/FolderViewer';
 import EmailHeadersViewer from './viewers/EmailHeadersViewer';
@@ -52,6 +53,9 @@ class DocumentContent extends Component {
         {document.children !== undefined && document.children > 0 && (
           <FolderViewer document={document} />
         )}
+
+          {document.extension === 'csv' &&
+          <ExcelViewer documentId={document.id}/>}
 
       </DualPane.ContentPane>
     );

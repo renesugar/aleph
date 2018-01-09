@@ -11,6 +11,11 @@ export const fetchSearchResults = asyncActionCreator(({ filters }) => async disp
   return { filters, result: response.data };
 }, { name: 'FETCH_SEARCH_RESULTS' });
 
+export const fetchTabularResults = asyncActionCreator(({ documentId }) => async dispatch => {
+    const response = await endpoint.get(`/documents/${documentId}/records`);
+    return { cells: response.data };
+}, { name: 'FETCH_TABULAR_RESULTS' });
+
 export const fetchNextSearchResults = asyncActionCreator(({ next }) => async dispatch => {
   const response = await endpoint.get(next);
   return { result: response.data };
