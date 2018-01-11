@@ -33,3 +33,4 @@ ui/.idea/misc.xml
 .idea/workspace.xml
 .idea/vcs.xml
 ui/.idea/watcherTasks.xml
+node_modules/*
