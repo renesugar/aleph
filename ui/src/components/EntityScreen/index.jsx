@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 
 import { fetchEntity } from 'src/actions';
 import Screen from 'src/components/common/Screen';
+import ScreenLoading from 'src/components/common/ScreenLoading';
 import Breadcrumbs from 'src/components/common/Breadcrumbs';
 import DualPane from 'src/components/common/DualPane';
 import EntityInfo from './EntityInfo';
@@ -28,15 +29,13 @@ class EntityScreen extends Component {
   render() {
     const { entity } = this.props;
     if (entity === undefined || entity.isFetching) {
-      return (
-        <span>Loading entity..</span>
-      );
+      return <ScreenLoading />;
     }
     return (
       <Screen>
         <Breadcrumbs collection={entity.collection}>
           <li>
-            <Entity.Link entity={entity} className="pt-breadcrumb" />
+            <Entity.Link entity={entity} className="pt-breadcrumb" truncate={30} />
           </li>
         </Breadcrumbs>
         <DualPane>

@@ -1,11 +1,11 @@
-.HtmlViewer {
-  flex-grow: 1;
-  margin: 10px;
-}
+@import "src/app/variables.scss";
 
-.HtmlViewer iframe {
-  background-color: white;
-  box-sizing: border-box;
-  width: 100%;
-  height: 100%;
+.HtmlViewer {
+  // max-width: 50em;
+  overflow-x: hidden;
+  padding: $aleph-grid-size;
+  box-shadow: $pt-elevation-shadow-1;
+  margin-bottom: 2 * $aleph-grid-size;
+  line-height: 1.4;
+  font-size: 1.1 * $aleph-font-size;
 }

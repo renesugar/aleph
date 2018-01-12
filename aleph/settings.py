@@ -42,13 +42,12 @@ TESING = False
 
 APP_TITLE = env.get('ALEPH_APP_TITLE', 'Aleph')
 APP_NAME = env.get('ALEPH_APP_NAME', 'aleph')
-APP_API_URL = env.get('ALEPH_API_URL')
 APP_UI_URL = env.get('ALEPH_UI_URL', 'http://localhost:3000/')
 # APP_LOGO = env.get('ALEPH_LOGO', '/static/images/aleph_small.png')
 # APP_FAVICON = env.get('ALEPH_FAVICON', '/static/images/aleph_small.png')
 
 # Force HTTPS here:
-URL_SCHEME = env.get('ALEPH_URL_SCHEME', 'http')
+URL_SCHEME = env.get('ALEPH_URL_SCHEME')
 
 # Shown on the home page as a few sample queries:
 SAMPLE_SEARCHES = ['TeliaSonera', 'Vladimir Putin']
@@ -56,6 +55,13 @@ SAMPLE_SEARCHES = env_list('ALEPH_SAMPLE_SEARCHES', SAMPLE_SEARCHES)
 
 # Cross-origin resource sharing
 CORS_ORIGINS = env_list('ALEPH_CORS_ORIGINS', seperator='|')
+
+
+###############################################################################
+# Error reporting
+
+# Using sentry raven
+SENTRY_DSN = env.get('SENTRY_DSN')
 
 
 ###############################################################################
@@ -140,8 +146,8 @@ ALEMBIC_DIR = path.abspath(ALEMBIC_DIR)
 
 ELASTICSEARCH_URL = env.get('ALEPH_ELASTICSEARCH_URI', 'http://localhost:9200')
 
-# Enable delayed processing via queue
-QUEUE = env_bool('ALEPH_QUEUE')
+# Disable delayed processing via queue
+EAGER = env_bool('ALEPH_EAGER', False)
 
 BROKER_URI = 'amqp://guest:guest@localhost:5672//'
 BROKER_URI = env.get('ALEPH_BROKER_URI', BROKER_URI)

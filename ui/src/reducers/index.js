@@ -5,13 +5,15 @@ import metadata from './metadata'
 import session from './session'
 import entities from './entities';
 import tabularResults from './tabularResults';
+import statistics from './statistics';
 
 const rootReducer = combineReducers({
   collections,
   metadata,
   session,
   entities,
-  tabularResults
+  tabularResults,
+  statistics
 });
 
 export default rootReducer;

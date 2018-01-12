@@ -2,6 +2,7 @@ from pprint import pprint  # noqa
 from elasticsearch.helpers import scan
 
 from aleph.core import es
+from aleph.index.util import authz_query
 from aleph.search.result import SearchQueryResult
 from aleph.search.parser import SearchQueryParser
 
@@ -87,9 +88,9 @@ class Query(object):
     def get_source(self):
         source = {}
         if self.INCLUDE_FIELDS:
-            source['include'] = self.INCLUDE_FIELDS
+            source['includes'] = self.INCLUDE_FIELDS
         elif self.EXCLUDE_FIELDS:
-            source['exclude'] = self.EXCLUDE_FIELDS
+            source['excludes'] = self.EXCLUDE_FIELDS
         return source
 
     def get_body(self):
@@ -146,12 +147,5 @@ class AuthzQuery(Query):
 
     def get_filters(self):
         filters = super(AuthzQuery, self).get_filters()
-
-        # Hot-wire authorization entirely for admins.
-        if not self.parser.authz.is_admin:
-            filters.append({
-                'terms': {
-                    'roles': list(self.parser.authz.roles)
-                }
-            })
+        filters.append(authz_query(self.parser.authz))
         return filters

@@ -1,10 +1,15 @@
-import {endpoint} from 'src/app/api';
+import { endpoint } from 'src/app/api';
 import asyncActionCreator from './asyncActionCreator';
 
 export const fetchMetadata = asyncActionCreator(() => async dispatch => {
   const response = await endpoint.get('metadata');
   return { metadata: response.data };
 }, { name: 'FETCH_METADATA' });
+
+export const fetchStatistics = asyncActionCreator(() => async dispatch => {
+    const response = await endpoint.get('statistics');
+    return { statistics: response.data };
+}, { name: 'FETCH_STATISTICS' });
 
 export const fetchSearchResults = asyncActionCreator(({ filters }) => async dispatch => {
   const response = await endpoint.get('search', { params: filters });
@@ -36,19 +41,7 @@ export const fetchCollection = asyncActionCreator(({ id }) => async dispatch => 
   return { id, data: response.data };
 }, { name: 'FETCH_COLLECTION' });
 
-export const fetchCollectionsPage = asyncActionCreator(({ page }) => async dispatch => {
-  const limit = 5000;
-  const response = await endpoint.get('collections', {
-    params: { limit, offset: page * limit }
-  });
-  return { result: response.data };
-}, { name: 'FETCH_COLLECTIONS_PAGE' });
-
-export const fetchCollections = () => async dispatch => {
-  let page = 0;
-  let pages;
-  do {
-    const { result } = await dispatch(fetchCollectionsPage({ page }));
-    pages = result.pages;
-  } while (++page < pages);
-};
+export const fetchCollections = asyncActionCreator(({ filters }) => async dispatch => {
+  const response = await endpoint.get('collections', { params: filters });
+  return { filters, result: response.data };
+}, { name: 'FETCH_COLLECTIONS' });

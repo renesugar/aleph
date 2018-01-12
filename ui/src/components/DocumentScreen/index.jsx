@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 
 import { fetchDocument } from 'src/actions';
 import Screen from 'src/components/common/Screen';
+import ScreenLoading from 'src/components/common/ScreenLoading';
 import Breadcrumbs from 'src/components/common/Breadcrumbs';
 import DualPane from 'src/components/common/DualPane';
 import Entity from 'src/components/EntityScreen/Entity';
@@ -25,19 +26,19 @@ class DocumentScreen extends Component {
   render() {
     const { document, location } = this.props;
     if (document === undefined) {
-      return null;
+      return <ScreenLoading />;
     }
     return (
       <Screen>
         <Breadcrumbs collection={document.collection}>
           { document.parent && (
             <li>
-              <Entity.Link entity={document.parent} className="pt-breadcrumb" icon short />
+              <Entity.Link entity={document.parent} className="pt-breadcrumb" icon truncate={30} />
             </li>
           )}
           <li>
-            <a className="pt-breadcrumb pt-breadcrumb-current">
-              <Entity.Label entity={document} icon short />
+            <a className="pt-breadcrumb">
+              <Entity.Label entity={document} icon truncate={30} />
             </a>
           </li>
         </Breadcrumbs>
