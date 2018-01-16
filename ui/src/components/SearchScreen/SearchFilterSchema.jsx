@@ -39,7 +39,8 @@ class SearchFilterSchema extends Component {
             <Tab2 key={schema.id} id={schema.id}>
               <Tooltip content={schema.label} position={Position.BOTTOM}>
                 <span>
-                  <Schema.Icon schema={schema.id} />
+                  <Schema.Icon schema={schema.id} />{' '}
+                  <FormattedMessage id={schema.label} defaultMessage={schema.label}/>{' '}
                   <FormattedNumber value={schema.count} />
                 </span>
               </Tooltip>

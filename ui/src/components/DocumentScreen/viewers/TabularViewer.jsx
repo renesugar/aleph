@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import {fetchDocument, fetchTabularResults} from "../../../actions/index";
+import { BaseExample } from "@blueprintjs/docs";
 
 import {Table, Cell, Column, ColumnHeaderCell, Utils} from "@blueprintjs/table"
 
@@ -11,14 +12,12 @@ class TabularViewer extends Component {
             documentId: 0,
             structuredData: [],
             data: [],
-            sortedIndexMap: [],
             columns: []
         };
 
         this.getStructuredData = this.getStructuredData.bind(this);
         this.getCellData = this.getCellData.bind(this);
         this.getColumn = this.getColumn.bind(this);
-        this.sortColumn = this.sortColumn.bind(this);
     }
 
     componentDidMount() {
@@ -33,6 +32,26 @@ class TabularViewer extends Component {
             }
             this.setState({columns: this.props.entities[this.props.documentId].columns, data: data});
         }
+    }
+
+    sortedData(columns, rows) {
+        let i, j;
+        let sortedRows = [];
+        let sortedData = [];
+        for(i = 0; i < columns.length; i++) {
+            sortedRows = [];
+            for(j = 0; j < rows.length; j++) {
+                if(rows[j].data[columns[i]] !== undefined && rows[j].data[columns[i]] !== null) {
+                    sortedRows.push(rows[j].data[columns[i]])
+                }
+            }
+
+            let sortedObject = {column: columns[i], rows: sortedRows};
+
+            sortedData.push(sortedObject);
+        }
+
+        return sortedData;
     }
 
     getStructuredData(columns, rows) {
@@ -81,10 +100,9 @@ class TabularViewer extends Component {
     }
 
     getColumn(data, index, name, getCellData) {
-        const cellRenderer = (rowIndex, columnIndex) => (
-            <Cell>{getCellData(rowIndex, columnIndex, data)}</Cell>
+        const cellRenderer = (rowIndex, index) => (
+            <Cell>{getCellData(rowIndex, index, data)}</Cell>
         );
-        console.log('NAME', name)
         return (
             <Column
                 renderCell={cellRenderer}
@@ -95,45 +113,25 @@ class TabularViewer extends Component {
     };
 
     getCellData(rowIndex, columnIndex, data) {
-        const sortedRowIndex = this.state.sortedIndexMap[rowIndex];
-        if (sortedRowIndex !== null) {
-            rowIndex = sortedRowIndex;
-        }
-        console.log('DATA', data[200 + columnIndex], rowIndex, columnIndex);
-        return data[200 + columnIndex].rows[0];
-    };
-
-    sortColumn = (columnIndex, comparator) => {
-        const { data } = this.state;
-        const sortedIndexMap = Utils.times(data.length, (i) => i);
-        sortedIndexMap.sort((a, b) => {
-            return comparator(data[a][columnIndex], data[b][columnIndex]);
-        });
-        this.setState({ sortedIndexMap });
+        //console.log(rowIndex, columnIndex);
+        return data[columnIndex].rows[rowIndex];
     };
 
     render() {
         const columnArray = this.props.entities[this.props.documentId].columns;
-        const numRows = this.props.tabularResults.total;
+        let numRows = 0;
         const rows = this.props.tabularResults.results;
-        let data = [];
         let columns = [];
+
         if(rows !== undefined) {
-            data = this.getStructuredData(columnArray, rows);
+            numRows = rows.length;
+            let data = this.sortedData(columnArray,rows);
             columns = this.state.columns.map((col, index) => this.getColumn(data, index, col, this.getCellData));
-
-            //this.setState({data: data})
+            console.log('sorted data', data);
         }
-        //const renderCell = (rowIndex) => <Cell>{this.props.edgeOverrides[rowIndex]}</Cell>;
-        //const renderCell = (rowIndex) => <Cell>10</Cell>;
-
-        /*let columns = columnArray.map(function(item) {
-            return <Column name={item.toString()} renderCell={renderCell}/>;
-        });*/
-        //const renderCell = this.renderCell();
         return (
             <div className="ExcelViewer">
-                <Table numRows={3}>
+                <Table numRows={numRows}>
                     {columns}
                 </Table>
             </div>
