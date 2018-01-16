@@ -66,3 +66,4 @@ node_modules/tslib/package.json
 node_modules/tslib/CopyrightNotice.txt
 node_modules/tslib/.npmignore
 node_modules/*
+package-lock.json
