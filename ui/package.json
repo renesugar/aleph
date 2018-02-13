@@ -37,9 +37,11 @@
   "devDependencies": {
     "faker": "^4.1.0",
     "json-server": "^0.10.0",
+    "node-sass": "^4.7.2",
     "node-sass-chokidar": "0.0.3",
     "npm-run-all": "^4.0.2",
-    "react-scripts": "1.0.17"
+    "react-scripts": "1.0.17",
+    "sass-loader": "^6.0.6"
   },
   "proxy": {
     "/api": {
@@ -53,7 +55,7 @@
     "json2pot": "react-intl-po json2pot 'i18n/messages.json' -o 'i18n/messages.pot'",
     "po2json": "react-intl-po po2json 'i18n/translations/*.po' -m 'i18n/messages.json' -o src/translations.json",
     "start-js": "react-scripts start",
-    "start": "npm-run-all -p watch-css start-js",
+    "start": "npm-run-all -p start-js",
     "build": "npm run build-css && react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
