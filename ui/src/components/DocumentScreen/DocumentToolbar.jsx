@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { FormattedMessage } from 'react-intl';
 import { Popover, PopoverInteractionKind, Position } from "@blueprintjs/core";
 
-import './DocumentToolbar.css';
+import './DocumentToolbar.scss';
 
 class DocumentToolbar extends React.Component {
   render() {
