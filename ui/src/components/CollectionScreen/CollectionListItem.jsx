@@ -3,10 +3,10 @@ import { FormattedMessage, FormattedNumber } from 'react-intl';
 import { Icon } from "@blueprintjs/core";
 import Truncate from 'react-truncate';
 
-import Date from 'src/components/common/Date';
-import Category from 'src/components/common/Category';
-import Country from 'src/components/common/Country';
-import Collection from 'src/components/common/Collection';
+import Date from 'components/common/Date';
+import Category from 'components/common/Category';
+import Country from 'components/common/Country';
+import Collection from 'components/common/Collection';
 
 import './CollectionListItem.css';
 

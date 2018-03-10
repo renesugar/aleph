@@ -1,6 +1,6 @@
 import {FormattedMessage} from 'react-intl';
 
-import wordList from 'src/util/wordList';
+import wordList from 'util/wordList';
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 

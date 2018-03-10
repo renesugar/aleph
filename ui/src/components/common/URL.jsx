@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import getHost from 'src/util/getHost';
+import getHost from 'util/getHost';
 
 class URL extends Component {
   render() {

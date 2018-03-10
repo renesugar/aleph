@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import { DocumentToolbar } from 'src/components/Toolbar';
+import { DocumentToolbar } from 'components/Toolbar';
 
 import './HtmlViewer.css';
 

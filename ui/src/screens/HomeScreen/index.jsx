@@ -5,9 +5,9 @@ import { Link } from 'react-router-dom';
 import { defineMessages, injectIntl, FormattedMessage } from 'react-intl';
 import numeral from 'numeral';
 
-import Screen from 'src/components/common/Screen';
-import {fetchStatistics} from 'src/actions/index';
-import Schema from 'src/components/common/Schema';
+import Screen from 'components/common/Screen';
+import {fetchStatistics} from 'actions/index';
+import Schema from 'components/common/Schema';
 
 import './HomeScreen.css';
 

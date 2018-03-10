@@ -5,7 +5,7 @@ import { Dialog, Button, Intent } from '@blueprintjs/core';
 import { defineMessages, FormattedMessage, injectIntl } from 'react-intl';
 import c from 'classnames';
 
-import { updateRole, fetchRole } from 'src/actions';
+import { updateRole, fetchRole } from 'actions';
 
 
 const messages = defineMessages({

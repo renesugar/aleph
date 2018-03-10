@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { defineMessages, injectIntl } from 'react-intl';
 
 import EntityTableRow from './EntityTableRow';
-import SortableTH from 'src/components/common/SortableTH';
+import SortableTH from 'components/common/SortableTH';
 
 const messages = defineMessages({
   column_name: {

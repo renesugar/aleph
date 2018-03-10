@@ -1,7 +1,7 @@
 import { createReducer } from 'redux-act';
 import { set } from 'lodash/fp';
 
-import { fetchCollectionPermissions, updateCollectionPermissions } from 'src/actions';
+import { fetchCollectionPermissions, updateCollectionPermissions } from 'actions';
 
 const initialState = {};
 

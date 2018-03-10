@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 
-import Country from 'src/components/common/Country';
-import Schema from 'src/components/common/Schema';
-import Collection from 'src/components/common/Collection';
-import Entity from 'src/components/EntityScreen/Entity';
-import FileSize from 'src/components/common/FileSize';
-import Date from 'src/components/common/Date';
+import Country from 'components/common/Country';
+import Schema from 'components/common/Schema';
+import Collection from 'components/common/Collection';
+import Entity from 'components/EntityScreen/Entity';
+import FileSize from 'components/common/FileSize';
+import Date from 'components/common/Date';
 
 class EntityTableRow extends Component {
   shouldComponentUpdate(nextProps) {

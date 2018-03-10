@@ -4,8 +4,8 @@ import { defineMessages, injectIntl, FormattedMessage, FormattedNumber } from 'r
 import { Button, Icon, Collapse, Spinner } from '@blueprintjs/core';
 import c from 'classnames';
 
-import { fetchFacet } from 'src/actions';
-import CheckboxList from 'src/components/common/CheckboxList';
+import { fetchFacet } from 'actions';
+import CheckboxList from 'components/common/CheckboxList';
 
 import './SearchFacet.css';
 

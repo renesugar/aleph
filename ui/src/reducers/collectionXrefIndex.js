@@ -1,7 +1,7 @@
 import { createReducer } from 'redux-act';
 import { set } from 'lodash/fp';
 
-import { fetchCollectionXrefIndex } from 'src/actions';
+import { fetchCollectionXrefIndex } from 'actions';
 
 const initialState = {};
 

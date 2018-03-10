@@ -3,17 +3,17 @@ import {connect} from 'react-redux';
 import {FormattedMessage} from 'react-intl';
 import { Button, Tab, Tabs } from "@blueprintjs/core";
 
-import DualPane from 'src/components/common/DualPane';
-import Category from 'src/components/common/Category';
-import Language from 'src/components/common/Language';
-import Country from 'src/components/common/Country';
-import Role from 'src/components/common/Role';
-import Date from 'src/components/common/Date';
+import DualPane from 'components/common/DualPane';
+import Category from 'components/common/Category';
+import Language from 'components/common/Language';
+import Country from 'components/common/Country';
+import Role from 'components/common/Role';
+import Date from 'components/common/Date';
 
 import CollectionInfoXref from './CollectionInfoXref';
-import CollectionEditDialog from 'src/dialogs/CollectionEditDialog';
+import CollectionEditDialog from 'dialogs/CollectionEditDialog';
 
-import { fetchCollectionPermissions } from 'src/actions';
+import { fetchCollectionPermissions } from 'actions';
 import CollectionPermissionsEdit from "../CollectionPermissions/CollectionPermissionsEdit";
 
 class CollectionInfo extends Component {

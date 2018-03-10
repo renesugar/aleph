@@ -3,8 +3,8 @@ import { connect } from 'react-redux';
 import { Button, AnchorButton } from '@blueprintjs/core';
 import { FormattedMessage } from 'react-intl';
 
-import SettingsDialog from 'src/dialogs/SettingsDialog';
-import AlertsDialog from 'src/dialogs/AlertsDialog';
+import SettingsDialog from 'dialogs/SettingsDialog';
+import AlertsDialog from 'dialogs/AlertsDialog';
 
 class SettingsButton extends Component {
   constructor() {

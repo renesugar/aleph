@@ -10,7 +10,7 @@ import de from 'react-intl/locale-data/de';
 import ru from 'react-intl/locale-data/ru';
 import es from 'react-intl/locale-data/es';
 
-import translations from 'src/content/translations.json';
+import translations from 'content/translations.json';
 import Router from './Router';
 
 // TODO Initialise store here instead of in store.js (which should just export
@@ -20,11 +20,9 @@ import store from './store';
 // TODO Initialise endpoint in here instead of api.js. And then pass it down as
 // context, like Provider passes down the store? Or use redux-axios-middleware?
 import { endpoint } from './api';
-import { logout } from 'src/actions/sessionActions';
+import { logout } from 'actions/sessionActions';
 
 import './App.css';
-
-require('dotenv').config();
 
 // have blueprint handle focus properly
 FocusStyleManager.onlyShowFocusOnTabs();

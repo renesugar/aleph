@@ -4,7 +4,7 @@ import {connect} from 'react-redux';
 import {Helmet} from 'react-helmet';
 import c from 'classnames';
 
-import {Navbar} from 'src/components/Navbar';
+import {Navbar} from 'components/Navbar';
 
 import './Screen.css';
 import Footer from "../Footer/Footer";

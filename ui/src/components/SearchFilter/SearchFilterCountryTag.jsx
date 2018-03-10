@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react';
 import { Tag } from '@blueprintjs/core';
 
-import Country from 'src/components/common/Country';
+import Country from 'components/common/Country';
 
 class SearchFilterCountryTag extends PureComponent {
   constructor(props) {

@@ -1,8 +1,8 @@
 import { createReducer } from 'redux-act';
 import jwtDecode from 'jwt-decode';
 
-import { loginWithToken, logout } from 'src/actions/sessionActions';
-import { fetchRole, updateRole } from 'src/actions';
+import { loginWithToken, logout } from 'actions/sessionActions';
+import { fetchRole, updateRole } from 'actions';
 
 const initialState = {
   loggedIn: false,

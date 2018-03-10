@@ -6,9 +6,9 @@ import truncateText from 'truncate';
 import { connect } from 'react-redux';
 import c from 'classnames';
 
-import Schema from 'src/components/common/Schema';
-import getPath from 'src/util/getPath';
-import { fetchEntity } from 'src/actions';
+import Schema from 'components/common/Schema';
+import getPath from 'util/getPath';
+import { fetchEntity } from 'actions';
 
 import './Entity.css';
 

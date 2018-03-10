@@ -5,7 +5,7 @@ import {
   queryCollections,
   queryEntities,
   queryDocumentRecords,
-} from 'src/actions';
+} from 'actions';
 
 const initialState = {};
 

@@ -1,4 +1,4 @@
-import { endpoint } from 'src/app/api';
+import { endpoint } from 'app/api';
 
 export async function queryEndpoint({query, next}) {
   // run a standard Query object against the API endpoint 

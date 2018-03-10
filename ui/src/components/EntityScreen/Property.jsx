@@ -2,11 +2,11 @@ import React, {Component} from 'react';
 import { FormattedMessage } from 'react-intl';
 
 import Entity from './Entity';
-import Country from 'src/components/common/Country';
-import Date from 'src/components/common/Date';
-import URL from 'src/components/common/URL';
-import wordList from 'src/util/wordList';
-import ensureArray from 'src/util/ensureArray';
+import Country from 'components/common/Country';
+import Date from 'components/common/Date';
+import URL from 'components/common/URL';
+import wordList from 'util/wordList';
+import ensureArray from 'util/ensureArray';
 
 import './Property.css';
 

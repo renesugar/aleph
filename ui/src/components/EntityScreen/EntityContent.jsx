@@ -5,9 +5,9 @@ import _ from 'lodash';
 
 import Property from './Property';
 import Entity from './Entity';
-import DualPane from 'src/components/common/DualPane';
-import Date from 'src/components/common/Date';
-import Schema from 'src/components/common/Schema';
+import DualPane from 'components/common/DualPane';
+import Date from 'components/common/Date';
+import Schema from 'components/common/Schema';
 import EntityReferences from './EntityReferences';
 import { fetchEntityReferences } from '../../actions/index';
 

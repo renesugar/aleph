@@ -2,7 +2,7 @@ import { createReducer } from 'redux-act';
 
 import {
   queryDocumentRecords,
-} from 'src/actions';
+} from 'actions';
 import { cacheResults } from './util';
 
 const initialState = {};

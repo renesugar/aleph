@@ -1,6 +1,6 @@
 import { createReducer } from 'redux-act';
 
-import { fetchStatistics } from 'src/actions';
+import { fetchStatistics } from 'actions';
 
 const initialState = {
     isLoading: false,

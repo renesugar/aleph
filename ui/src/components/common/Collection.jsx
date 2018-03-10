@@ -3,9 +3,9 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
-import getPath from 'src/util/getPath';
-import { fetchCollection } from 'src/actions';
-import { selectCollection } from 'src/selectors';
+import getPath from 'util/getPath';
+import { fetchCollection } from 'actions';
+import { selectCollection } from 'selectors';
 
 
 class CollectionLabel extends Component {

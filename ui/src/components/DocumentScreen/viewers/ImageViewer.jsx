@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
-import SectionLoading from 'src/components/common/SectionLoading';
-import { DocumentToolbar } from 'src/components/Toolbar';
+import SectionLoading from 'components/common/SectionLoading';
+import { DocumentToolbar } from 'components/Toolbar';
 
 import './ImageViewer.css';
 

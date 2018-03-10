@@ -5,11 +5,11 @@ import { withRouter } from 'react-router';
 import { defineMessages, injectIntl } from 'react-intl';
 import Waypoint from 'react-waypoint';
 
-import Query from 'src/app/Query';
-import { queryDocumentRecords } from 'src/actions';
-import { selectDocumentRecordsResult } from 'src/selectors';
-import SectionLoading from 'src/components/common/SectionLoading';
-import { DocumentToolbar } from 'src/components/Toolbar';
+import Query from 'app/Query';
+import { queryDocumentRecords } from 'actions';
+import { selectDocumentRecordsResult } from 'selectors';
+import SectionLoading from 'components/common/SectionLoading';
+import { DocumentToolbar } from 'components/Toolbar';
 
 
 const messages = defineMessages({

@@ -3,8 +3,8 @@ import {connect} from 'react-redux';
 import {Redirect} from 'react-router';
 import {injectIntl, FormattedMessage} from 'react-intl';
 
-import {endpoint} from 'src/app/api';
-import {loginWithPassword} from 'src/actions/sessionActions';
+import {endpoint} from 'app/api';
+import {loginWithPassword} from 'actions/sessionActions';
 import {xhrErrorToast} from './xhrToast';
 import {PasswordAuthActivate} from './PasswordAuth';
 

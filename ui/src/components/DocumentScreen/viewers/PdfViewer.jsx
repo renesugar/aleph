@@ -3,9 +3,9 @@ import { connect } from 'react-redux';
 import { Document, Page } from 'react-pdf/build/entry.webpack';
 import { findLast, throttle } from 'lodash';
 
-import SectionLoading from 'src/components/common/SectionLoading';
-import { DocumentToolbar } from 'src/components/Toolbar';
-import { parse as parsePdfFragId } from 'src/util/pdfFragId';
+import SectionLoading from 'components/common/SectionLoading';
+import { DocumentToolbar } from 'components/Toolbar';
+import { parse as parsePdfFragId } from 'util/pdfFragId';
 
 import './PdfViewer.css';
 

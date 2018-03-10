@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
-import DualPane from 'src/components/common/DualPane';
-import EntitySearch from 'src/components/EntitySearch/EntitySearch';
+import DualPane from 'components/common/DualPane';
+import EntitySearch from 'components/EntitySearch/EntitySearch';
 
 class CollectionContent extends Component {
   render() {

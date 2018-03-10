@@ -5,14 +5,14 @@ import { defineMessages, injectIntl } from 'react-intl';
 import { NonIdealState } from '@blueprintjs/core';
 import Waypoint from 'react-waypoint';
 
-import Query from 'src/app/Query';
-import { queryEntities } from 'src/actions';
-import { selectEntitiesResult } from 'src/selectors';
-import Screen from 'src/components/common/Screen';
-import DualPane from 'src/components/common/DualPane';
-import EntityTable from 'src/components/EntityTable/EntityTable';
-import SectionLoading from 'src/components/common/SectionLoading';
-import SearchFacets from 'src/components/Facet/SearchFacets';
+import Query from 'app/Query';
+import { queryEntities } from 'actions';
+import { selectEntitiesResult } from 'selectors';
+import Screen from 'components/common/Screen';
+import DualPane from 'components/common/DualPane';
+import EntityTable from 'components/EntityTable/EntityTable';
+import SectionLoading from 'components/common/SectionLoading';
+import SearchFacets from 'components/Facet/SearchFacets';
 
 import './SearchScreen.css';
 

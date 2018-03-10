@@ -5,7 +5,7 @@ import {
   queryEntities,
   fetchDocument,
   fetchEntity,
-} from 'src/actions';
+} from 'actions';
 import { cacheResults } from './util';
 
 const initialState = {};

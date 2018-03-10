@@ -2,7 +2,7 @@ import { defineMessages, injectIntl, FormattedNumber, FormattedMessage } from 'r
 import {MenuItem, Classes, Position} from '@blueprintjs/core'
 import {MultiSelect as BlueprintMultiSelect} from "@blueprintjs/select";
 
-import wordList from 'src/util/wordList';
+import wordList from 'util/wordList';
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 

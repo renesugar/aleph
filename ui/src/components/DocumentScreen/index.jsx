@@ -3,12 +3,12 @@ import { connect } from 'react-redux';
 import { NonIdealState } from '@blueprintjs/core';
 import { defineMessages, injectIntl } from 'react-intl';
 
-import { fetchDocument } from 'src/actions';
-import Screen from 'src/components/common/Screen';
-import Entity from 'src/components/EntityScreen/Entity';
-import Breadcrumbs from 'src/components/common/Breadcrumbs';
-import ScreenLoading from 'src/components/common/ScreenLoading';
-import DualPane from 'src/components/common/DualPane';
+import { fetchDocument } from 'actions';
+import Screen from 'components/common/Screen';
+import Entity from 'components/EntityScreen/Entity';
+import Breadcrumbs from 'components/common/Breadcrumbs';
+import ScreenLoading from 'components/common/ScreenLoading';
+import DualPane from 'components/common/DualPane';
 
 import DocumentInfo from './DocumentInfo';
 import DocumentContent from './DocumentContent';

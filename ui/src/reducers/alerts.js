@@ -1,6 +1,6 @@
 import { createReducer } from 'redux-act';
 
-import { fetchAlerts } from 'src/actions';
+import { fetchAlerts } from 'actions';
 
 const initialState = {};
 

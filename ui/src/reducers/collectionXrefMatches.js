@@ -1,9 +1,9 @@
 import { createReducer } from 'redux-act';
 import { set, update } from 'lodash/fp';
 
-import { fetchCollectionXrefMatches, fetchNextCollectionXrefMatches } from 'src/actions';
-import { matchesKey } from 'src/selectors';
-import { combineResults } from 'src/reducers/util';
+import { fetchCollectionXrefMatches, fetchNextCollectionXrefMatches } from 'actions';
+import { matchesKey } from 'selectors';
+import { combineResults } from 'reducers/util';
 
 const initialState = {};
 

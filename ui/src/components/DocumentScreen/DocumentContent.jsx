@@ -1,7 +1,7 @@
 import React from 'react';
 import { FormattedMessage } from 'react-intl';
 
-import DualPane from 'src/components/common/DualPane';
+import DualPane from 'components/common/DualPane';
 import TableViewer from './viewers/TableViewer';
 import TextViewer from './viewers/TextViewer';
 import HtmlViewer from './viewers/HtmlViewer';

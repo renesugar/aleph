@@ -5,7 +5,7 @@ import {Redirect} from 'react-router';
 import queryString from 'query-string';
 import {NonIdealState} from '@blueprintjs/core';
 
-import {loginWithPassword, loginWithToken} from 'src/actions/sessionActions';
+import {loginWithPassword, loginWithToken} from 'actions/sessionActions';
 import OAuthLogin from './OAuthLogin';
 import {PasswordAuthLogin} from './PasswordAuth';
 

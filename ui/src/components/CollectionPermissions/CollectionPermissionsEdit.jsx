@@ -3,7 +3,7 @@ import { Checkbox, Button } from '@blueprintjs/core';
 import {connect} from 'react-redux';
 import {defineMessages, FormattedMessage, injectIntl} from 'react-intl';
 
-import Role from 'src/components/common/Role';
+import Role from 'components/common/Role';
 import {showSuccessToast} from "../../app/toast";
 import {updateCollectionPermissions} from "../../actions";
 

@@ -8,16 +8,16 @@ import {
     fetchCollection,
     fetchCollectionXrefMatches,
     fetchNextCollectionXrefMatches,
-    fetchCollectionXrefIndex } from 'src/actions';
-import Entity from 'src/components/EntityScreen/Entity';
-import Screen from 'src/components/common/Screen';
-import Date from 'src/components/common/Date';
-import Country from 'src/components/common/Country';
-import ScreenLoading from 'src/components/common/ScreenLoading';
-import SectionLoading from 'src/components/common/SectionLoading';
-import Breadcrumbs from 'src/components/common/Breadcrumbs';
-import { matchesKey, selectCollection } from 'src/selectors';
-import getPath from 'src/util/getPath';
+    fetchCollectionXrefIndex } from 'actions';
+import Entity from 'components/EntityScreen/Entity';
+import Screen from 'components/common/Screen';
+import Date from 'components/common/Date';
+import Country from 'components/common/Country';
+import ScreenLoading from 'components/common/ScreenLoading';
+import SectionLoading from 'components/common/SectionLoading';
+import Breadcrumbs from 'components/common/Breadcrumbs';
+import { matchesKey, selectCollection } from 'selectors';
+import getPath from 'util/getPath';
 
 import './CollectionsXrefScreen.css';
 

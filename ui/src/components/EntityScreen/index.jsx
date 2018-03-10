@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import { NonIdealState } from '@blueprintjs/core';
 import { defineMessages, injectIntl } from 'react-intl';
 
-import Screen from 'src/components/common/Screen';
-import ScreenLoading from 'src/components/common/ScreenLoading';
-import Breadcrumbs from 'src/components/common/Breadcrumbs';
-import DualPane from 'src/components/common/DualPane';
+import Screen from 'components/common/Screen';
+import ScreenLoading from 'components/common/ScreenLoading';
+import Breadcrumbs from 'components/common/Breadcrumbs';
+import DualPane from 'components/common/DualPane';
 import EntityInfo from './EntityInfo';
 import Entity from './Entity';
 import EntityContent from './EntityContent';

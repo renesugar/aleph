@@ -5,8 +5,8 @@ import { Button, AnchorButton } from "@blueprintjs/core";
 import { defineMessages, injectIntl, FormattedMessage, FormattedNumber } from 'react-intl';
 import numeral from 'numeral';
 
-import { fetchStatistics } from 'src/actions/index';
-import Screen from 'src/components/common/Screen'
+import { fetchStatistics } from 'actions/index';
+import Screen from 'components/common/Screen'
 
 import './HomeScreen.css';
 

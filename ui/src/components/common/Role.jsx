@@ -4,7 +4,7 @@ import { defineMessages, injectIntl } from 'react-intl';
 import { Button, MenuItem, Position, Classes, Alignment } from "@blueprintjs/core";
 import { Select as BlueprintSelect } from "@blueprintjs/select";
 
-import { suggestRoles } from "src/actions";
+import { suggestRoles } from 'actions';
 
 import './Role.css';
 

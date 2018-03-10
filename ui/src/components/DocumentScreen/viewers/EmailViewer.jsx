@@ -2,8 +2,8 @@ import React from 'react';
 import { FormattedMessage } from 'react-intl';
 import { Tab, Tabs } from "@blueprintjs/core";
 
-import EntitySearch from 'src/components/EntitySearch/EntitySearch';
-import { DocumentToolbar } from 'src/components/Toolbar';
+import EntitySearch from 'components/EntitySearch/EntitySearch';
+import { DocumentToolbar } from 'components/Toolbar';
 
 import './EmailViewer.css';
 

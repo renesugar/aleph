@@ -3,14 +3,14 @@ import { connect } from 'react-redux';
 import { FormattedMessage } from 'react-intl';
 import { Tab, Tabs } from "@blueprintjs/core";
 
-import Entity from 'src/components/EntityScreen/Entity';
-import EntityInfoTags from 'src/components/EntityScreen/EntityInfoTags';
-import DualPane from 'src/components/common/DualPane';
-import Schema from 'src/components/common/Schema';
-import DocumentMetadata from 'src/components/DocumentScreen/DocumentMetadata';
-import CollectionInfo from 'src/components/common/Collection/CollectionInfo';
-import URL from 'src/components/common/URL';
-import { getEntityTags } from 'src/selectors';
+import Entity from 'components/EntityScreen/Entity';
+import EntityInfoTags from 'components/EntityScreen/EntityInfoTags';
+import DualPane from 'components/common/DualPane';
+import Schema from 'components/common/Schema';
+import DocumentMetadata from 'components/DocumentScreen/DocumentMetadata';
+import CollectionInfo from 'components/common/Collection/CollectionInfo';
+import URL from 'components/common/URL';
+import { getEntityTags } from 'selectors';
 
 class DocumentInfo extends React.Component {
   constructor(props) {

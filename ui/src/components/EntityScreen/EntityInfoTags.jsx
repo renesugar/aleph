@@ -3,10 +3,10 @@ import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { FormattedNumber, FormattedMessage } from 'react-intl';
 
-import Tag from 'src/components/common/Tag';
-import { fetchEntityTags } from 'src/actions/index';
-import { getEntityTags } from 'src/selectors';
-import getPath from 'src/util/getPath';
+import Tag from 'components/common/Tag';
+import { fetchEntityTags } from 'actions/index';
+import { getEntityTags } from 'selectors';
+import getPath from 'util/getPath';
 
 class EntityInfoTags extends React.Component {
   componentDidMount() {

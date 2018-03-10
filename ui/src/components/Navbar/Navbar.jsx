@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom';
 import queryString from 'query-string';
 import { InputGroup } from '@blueprintjs/core';
 
-import AuthButtons from 'src/components/AuthButtons/AuthButtons';
-import SettingsButton from 'src/components/SettingsButton/SettingsButton';
+import AuthButtons from 'components/AuthButtons/AuthButtons';
+import SettingsButton from 'components/SettingsButton/SettingsButton';
 
 import './Navbar.css';
 

@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { FormattedMessage } from 'react-intl';
 
-import Category from 'src/components/common/Category';
-import Language from 'src/components/common/Language';
-import Country from 'src/components/common/Country';
-import Role from 'src/components/common/Role';
-import Date from 'src/components/common/Date';
+import Category from 'components/common/Category';
+import Language from 'components/common/Language';
+import Country from 'components/common/Country';
+import Role from 'components/common/Role';
+import Date from 'components/common/Date';
 
 
 class CollectionInfo extends Component {

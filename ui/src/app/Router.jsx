@@ -3,23 +3,23 @@ import { Route, Switch } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { Spinner } from '@blueprintjs/core';
 
-import { fetchMetadata } from 'src/actions';
-import LoginScreen from 'src/components/auth/LoginScreen';
-import LogoutScreen from 'src/components/auth/LogoutScreen';
-import SignupScreen from 'src/components/auth/SignupScreen';
-import ActivateScreen from 'src/components/auth/ActivateScreen';
-import EntityScreen from 'src/components/EntityScreen';
-import EntityRelatedScreen from 'src/components/EntityScreen/EntityRelatedScreen';
-import DocumentScreen from 'src/components/DocumentScreen';
-import DocumentRelatedScreen from 'src/components/DocumentScreen/DocumentRelatedScreen';
-import DocumentRedirectScreen from 'src/components/DocumentScreen/DocumentRedirectScreen';
-import ErrorScreen from 'src/components/ErrorScreen';
-import CollectionScreen from 'src/components/CollectionScreen';
+import { fetchMetadata } from 'actions';
+import LoginScreen from 'components/auth/LoginScreen';
+import LogoutScreen from 'components/auth/LogoutScreen';
+import SignupScreen from 'components/auth/SignupScreen';
+import ActivateScreen from 'components/auth/ActivateScreen';
+import EntityScreen from 'components/EntityScreen';
+import EntityRelatedScreen from 'components/EntityScreen/EntityRelatedScreen';
+import DocumentScreen from 'components/DocumentScreen';
+import DocumentRelatedScreen from 'components/DocumentScreen/DocumentRelatedScreen';
+import DocumentRedirectScreen from 'components/DocumentScreen/DocumentRedirectScreen';
+import ErrorScreen from 'components/ErrorScreen';
+import CollectionScreen from 'components/CollectionScreen';
 
-import HomeScreen from 'src/screens/HomeScreen/HomeScreen';
-import SearchScreen from 'src/screens/SearchScreen/SearchScreen';
-import CollectionsIndexScreen from 'src/screens/CollectionsIndexScreen/CollectionsIndexScreen';
-import CollectionsXrefScreen from 'src/screens/CollectionsXrefScreen/CollectionsXrefScreen';
+import HomeScreen from 'screens/HomeScreen/HomeScreen';
+import SearchScreen from 'screens/SearchScreen/SearchScreen';
+import CollectionsIndexScreen from 'screens/CollectionsIndexScreen/CollectionsIndexScreen';
+import CollectionsXrefScreen from 'screens/CollectionsXrefScreen/CollectionsXrefScreen';
 
 import './Router.css';
 

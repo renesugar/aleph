@@ -1,7 +1,7 @@
 import { createReducer } from 'redux-act';
 import { set, update } from 'lodash/fp';
 
-import { fetchEntityReferences } from 'src/actions';
+import { fetchEntityReferences } from 'actions';
 
 const initialState = {};
 

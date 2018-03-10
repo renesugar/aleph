@@ -2,12 +2,12 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import _ from 'lodash';
 
-import Query from 'src/app/Query';
-import { queryEntities } from 'src/actions';
-import { selectEntitiesResult } from 'src/selectors';
-import SectionLoading from 'src/components/common/SectionLoading';
+import Query from 'app/Query';
+import { queryEntities } from 'actions';
+import { selectEntitiesResult } from 'selectors';
+import SectionLoading from 'components/common/SectionLoading';
 import Property from './Property';
-import ensureArray from 'src/util/ensureArray';
+import ensureArray from 'util/ensureArray';
 
 import './EntityReferencesTable.css';
 

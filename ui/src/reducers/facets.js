@@ -1,7 +1,7 @@
 import { createReducer } from 'redux-act';
 import { set } from 'lodash/fp';
 
-import { fetchFacet } from 'src/actions';
+import { fetchFacet } from 'actions';
 
 const initialState = {};
 

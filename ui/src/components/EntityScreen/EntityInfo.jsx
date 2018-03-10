@@ -6,11 +6,11 @@ import { Tab, Tabs } from "@blueprintjs/core";
 import Property from './Property';
 import Entity from './Entity';
 import EntityInfoTags from './EntityInfoTags';
-import DualPane from 'src/components/common/DualPane';
-import Schema from 'src/components/common/Schema';
-import CollectionInfo from 'src/components/common/Collection/CollectionInfo';
-import { fetchEntityReferences } from 'src/actions/index';
-import { getEntityTags } from 'src/selectors';
+import DualPane from 'components/common/DualPane';
+import Schema from 'components/common/Schema';
+import CollectionInfo from 'components/common/Collection/CollectionInfo';
+import { fetchEntityReferences } from 'actions/index';
+import { getEntityTags } from 'selectors';
 
 class EntityInfo extends React.Component {
   constructor(props) {

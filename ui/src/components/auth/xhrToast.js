@@ -1,6 +1,6 @@
 import { defineMessages } from 'react-intl';
 
-import {showErrorToast, showSuccessToast} from 'src/app/toast';
+import {showErrorToast, showSuccessToast} from 'app/toast';
 
 const messages = defineMessages({
   bad_request: {

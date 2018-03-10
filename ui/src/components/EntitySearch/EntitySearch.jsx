@@ -6,11 +6,11 @@ import { connect } from 'react-redux';
 import { withRouter } from 'react-router';
 import { defineMessages, injectIntl } from 'react-intl';
 
-import Query from 'src/app/Query';
-import { queryEntities } from 'src/actions';
-import { selectEntitiesResult } from 'src/selectors';
-import EntityTable from 'src/components/EntityTable/EntityTable';
-import SectionLoading from 'src/components/common/SectionLoading';
+import Query from 'app/Query';
+import { queryEntities } from 'actions';
+import { selectEntitiesResult } from 'selectors';
+import EntityTable from 'components/EntityTable/EntityTable';
+import SectionLoading from 'components/common/SectionLoading';
 
 
 const messages = defineMessages({

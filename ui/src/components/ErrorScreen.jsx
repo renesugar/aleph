@@ -2,8 +2,8 @@ import React from 'react';
 import { defineMessages, injectIntl } from 'react-intl';
 import { NonIdealState } from '@blueprintjs/core';
 
-import Screen from 'src/components/common/Screen';
-import DualPane from 'src/components/common/DualPane';
+import Screen from 'components/common/Screen';
+import DualPane from 'components/common/DualPane';
 
 const messages = defineMessages({
   no_route_error: {

@@ -3,8 +3,8 @@ import { connect } from 'react-redux';
 import { Dialog, Button, Intent } from '@blueprintjs/core';
 import { defineMessages, FormattedMessage, injectIntl } from 'react-intl';
 
-import Role from 'src/components/common/Role';
-import Country from 'src/components/common/Country';
+import Role from 'components/common/Role';
+import Country from 'components/common/Country';
 import {showSuccessToast} from "../../app/toast";
 import {updateCollection} from "../../actions";
 

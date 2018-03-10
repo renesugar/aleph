@@ -2,14 +2,14 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { FormattedMessage } from 'react-intl';
 
-import { fetchEntity } from 'src/actions';
-import Screen from 'src/components/common/Screen';
-import ScreenLoading from 'src/components/common/ScreenLoading';
-import Breadcrumbs from 'src/components/common/Breadcrumbs';
-import DualPane from 'src/components/common/DualPane';
+import { fetchEntity } from 'actions';
+import Screen from 'components/common/Screen';
+import ScreenLoading from 'components/common/ScreenLoading';
+import Breadcrumbs from 'components/common/Breadcrumbs';
+import DualPane from 'components/common/DualPane';
 import EntityInfo from './EntityInfo';
 import Entity from './Entity';
-import EntitySearch from 'src/components/EntitySearch/EntitySearch';
+import EntitySearch from 'components/EntitySearch/EntitySearch';
 
 
 class EntityScreen extends Component {

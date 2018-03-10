@@ -5,9 +5,9 @@ import { withRouter } from 'react-router';
 import { defineMessages, injectIntl } from 'react-intl';
 import { FormattedMessage } from 'react-intl';
 
-import Query from 'src/app/Query';
-import EntitySearch from 'src/components/EntitySearch/EntitySearch';
-import { DocumentToolbar } from 'src/components/Toolbar';
+import Query from 'app/Query';
+import EntitySearch from 'components/EntitySearch/EntitySearch';
+import { DocumentToolbar } from 'components/Toolbar';
 
 import './FolderViewer.css';
 
